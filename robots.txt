@@ -1,0 +1,4 @@
+# STS demo — allow crawling; update Sitemap URL to the production domain at launch
+User-agent: *
+Allow: /
+Sitemap: /sitemap.xml

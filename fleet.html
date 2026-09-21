@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Fleet — Sedans, SUVs, Vans, Coasters, Pickups &amp; Trucks for Rent | STS Guyana</title>
+  <meta name="description" content="Browse the STS fleet: sedans, executive SUVs, 12 and 15-seat vans, coasters, 4x4 pickups, cargo vans and trucks in Guyana, with or without a driver.">
+  <meta property="og:title" content="STS Fleet — Choose the Right Vehicle for Your Needs">
+  <meta property="og:description" content="Sedans to trucks, with or without a driver, across Guyana.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Google Analytics: paste the production gtag.js snippet here at launch. -->
+</head>
+<body data-page="fleet">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="banner">
+      <div class="container">
+        <div class="banner__inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Fleet</span></nav>
+          <h1>Choose the Right Vehicle for Your Needs</h1>
+          <p>Air-conditioned sedans, SUVs, vans, coasters, pickups and trucks — available by the day or week, with or without a driver.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="fleet-title">
+      <div class="container">
+        <h2 id="fleet-title" class="sr-only">Vehicles</h2>
+        <div class="toolbar">
+          <div class="chips" id="fleet-chips" role="group" aria-label="Filter by category"></div>
+          <div class="toolbar__controls">
+            <label class="search"><span class="sr-only">Search vehicles</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="search" id="fleet-search" placeholder="Search by name, use or feature" autocomplete="off"></label>
+            <label class="select-wrap"><span class="sr-only">Sort vehicles</span><select id="fleet-sort"><option value="featured">Sort: Featured</option><option value="name-asc">Name: A to Z</option><option value="availability">Availability: most first</option><option value="seats">Seats: most first</option></select></label>
+          </div>
+        </div>
+        <div class="results-bar"><span id="fleet-count" aria-live="polite"></span><span class="note">Contact us for a tailored quotation. Driver, fuel and long-distance options quoted on request.</span></div>
+        <div class="grid grid--4" id="fleet-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="rental-title">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Rentals &amp; Drivers</span>
+            <h2 id="rental-title">Rent by the Day or Week — With or Without a Driver</h2>
+            <p>Every vehicle in the fleet can be booked for self-drive rental (subject to standard rental conditions) or with a professional STS driver. Need something not listed? We can usually source it.</p>
+            <ul class="checklist">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Tailored quotations for every booking</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dedicated driver available for any vehicle</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Long-term and corporate arrangements</li>
+            </ul>
+            <div class="btn-row"><a class="btn btn--primary" href="quote.html?service=vehicle-rental">Rental Quote</a><a class="btn btn--ghost" href="quote.html?service=dedicated-driver-services">Dedicated Driver Quote</a></div>
+          </div>
+          <div>
+            <div id="faq-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta">
+          <div><h2>Need a Vehicle on a Specific Date?</h2><p>Tell us the date, route and passengers — we confirm availability and send a quotation.</p></div>
+          <div class="btn-row"><a class="btn btn--primary btn--lg" href="quote.html">Get a Quote</a><a class="btn btn--outline btn--lg" href="contact.html">Contact Us</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="assets/js/vendor/jsQR.min.js" defer></script>
+  <script src="assets/js/demo-data.js"></script>
+  <script src="assets/js/qr-scanner.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

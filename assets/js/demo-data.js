@@ -436,6 +436,28 @@ const whyChoose = [
 /* ---------------------------------------------------------------------------
    FAQ  [DEMO]
    --------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+   Mission / Vision / Goals  [CONFIRMED — supplied by the client]
+   Text is the client's own wording. Only a closing full stop was added to each
+   statement; remove it here if the client wants the text exactly as written.
+   (The client's document headed the second item "VISSION" — spelled "Vision"
+   on the site. Confirm at review.)
+   --------------------------------------------------------------------------- */
+const companyStatements = [
+  {
+    id: "mission", icon: "target", title: "Mission Statement",
+    text: "To deliver reliable and efficient transportation services with professionalism, safety, and a commitment to customer satisfaction."
+  },
+  {
+    id: "vision", icon: "eye", title: "Vision",
+    text: "To be a leading transportation service provider recognized for reliability, safety, and professionalism, while building lasting relationships with our customers and supporting the growth of businesses in Guyana."
+  },
+  {
+    id: "goals", icon: "flag", title: "Goals",
+    text: "Our goal is to provide reliable and efficient transportation services while maintaining high safety standards, ensuring customer satisfaction, and continuously growing our operations."
+  }
+];
+
 const faqs = [
   { q: "How do I request a quotation?", a: "Use the Get a Quote button on any page and complete the form with your trip or service details. You can also call or WhatsApp our office directly." },
   { q: "Do you provide airport pick-ups late at night?", a: "Yes. Airport transfers are available at any hour. Our 24/7 Command Centre coordinates late arrivals and early departures." },
@@ -479,5 +501,5 @@ const hearAboutOptions = [
 window.STS_DATA = {
   siteConfig, contactInfo, socialLinks, navigation, trustItems, serviceGroups, services,
   vehicleCategories, vehicles, testimonials, certification, coverageAreas, whyChoose, faqs,
-  catalogCategories, hearAboutOptions
+  catalogCategories, hearAboutOptions, companyStatements
 };

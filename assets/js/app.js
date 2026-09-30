@@ -391,7 +391,7 @@
     // Detail view always shows the whole vehicle (contain), even for photos that
     // are cropped to fill the smaller card.
     $("#vehicle-modal-body").innerHTML = `
-      <div class="vmodal__media"><img src="${esc(v.image)}" alt="${esc(v.name)}"></div>
+      <div class="vmodal__media"><img src="${esc(v.detailImage || v.image)}" alt="${esc(v.name)}"></div>
       <div class="vmodal__body">
         <span class="vmodal__cat">${esc(v.category)}</span>
         <h3 class="vmodal__title" id="vehicle-modal-title">${esc(v.name)}</h3>

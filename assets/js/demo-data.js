@@ -237,6 +237,8 @@ const services = [
    Names, capacities and prices are realistic placeholders based on the
    approved design. Images cropped from the approved design where available.
    `image` paths are relative to the site root.
+   `detailImage` (optional) — larger, uncropped photo shown in the "View Details"
+   window; the card keeps using `image`.
    --------------------------------------------------------------------------- */
 const vehicleCategories = [
   "Sedan", "Executive Sedan", "SUV", "Executive SUV", "Van",
@@ -253,25 +255,28 @@ const vehicles = [
     specs: ["4-door sedan", "1.5L VVT-i petrol", "CVT automatic", "Reclining, split-folding rear seats"]
   },
   {
-    id: "fielder", name: "Toyota Fielder", category: "Sedan", image: "assets/images/fleet/fielder.jpg", imageFit: "cover",
+    id: "fielder", name: "Toyota Fielder", category: "Sedan", image: "assets/images/fleet/fielder.jpg?v=4", imageFit: "cover",
+    detailImage: "assets/images/fleet/fielder-detail.jpg",                         // [CONFIRMED] client photo (STS-branded vehicle)
     seats: 5, bags: 2, cargo: null, transmission: "Automatic", ac: true,
     qty: 5, featured: true,                                                         // [CONFIRMED vehicle] [CONFIRMED] fleet count
-    useCases: ["Airport transfers", "Point-to-point trips", "Daily rental"],
-    specs: ["Station wagon body", "1.5L VVT-i petrol", "CVT automatic", "Split-folding rear seats"]
+    useCases: ["Airport transfers", "Point-to-point trips", "Daily rental", "Staff transportation"],
+    specs: ["Station wagon body", "1.5L VVT-i petrol", "CVT automatic", "Split-folding rear seats", "Large rear luggage area"]
   },
   {
-    id: "honda-crv", name: "Honda CR-V", category: "SUV", image: "assets/images/fleet/honda-crv.jpg", imageFit: "cover",
+    id: "honda-crv", name: "Honda CR-V", category: "SUV", image: "assets/images/fleet/honda-crv.jpg?v=4", imageFit: "cover",
+    detailImage: "assets/images/fleet/honda-crv-detail.jpg",                       // [CONFIRMED] client photo
     seats: 5, bags: 3, cargo: null, transmission: "Automatic", ac: true,
     qty: 1, featured: true,                                                         // [CONFIRMED vehicle] [CONFIRMED] fleet count
-    useCases: ["Corporate transport", "Airport transfers", "Family and group trips"],
-    specs: ["Mid-size SUV", "CVT automatic", "Rear climate vents"]
+    useCases: ["Corporate transport", "Executive & VIP transport", "Airport transfers", "Family and group trips"],
+    specs: ["Mid-size SUV", "CVT automatic", "Rear climate vents", "Split-folding rear seats", "Spacious cargo area"]
   },
   {
-    id: "byd", name: "BYD", category: "Sedan", image: "assets/images/fleet/byd.jpg", imageFit: "cover",
+    id: "byd", name: "BYD", category: "Sedan", image: "assets/images/fleet/byd.jpg?v=4", imageFit: "cover",
+    detailImage: "assets/images/fleet/byd-detail.jpg",                             // [CONFIRMED] client photo
     seats: 5, bags: 3, cargo: null, transmission: "Automatic", ac: true,
     qty: 2, featured: true,                                                         // [CONFIRMED vehicle] [CONFIRMED] fleet count; model/trim to be confirmed
-    useCases: ["Corporate transport", "Point-to-point trips", "Daily rental"],
-    specs: ["Electric / hybrid drivetrain", "Automatic transmission", "Modern interior"]
+    useCases: ["Corporate transport", "Executive & VIP transport", "Point-to-point trips", "Daily rental"],
+    specs: ["Electric / hybrid drivetrain", "Automatic transmission", "Quiet, smooth ride", "Large touchscreen infotainment", "Modern interior"]
   },
   {
     id: "camry", name: "Toyota Camry", category: "Executive Sedan", image: "assets/images/fleet/camry.jpg",
